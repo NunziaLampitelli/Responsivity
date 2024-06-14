@@ -22,10 +22,8 @@ figure {
 .container {
 	display: grid;
 	grid-template-columns: 1fr 1fr;
-	grid-template-rows: 1fr 1fr;
 	gap: 1rem;
-	margin-left: 2rem;
-	margin-right: 2rem;
+	margin-inline: 2rem;
 }
 
 .div_i {
@@ -48,10 +46,44 @@ section {
 .section_i {
 	background-color: fuchsia;
 	border-radius: 34px;
-	height: 5rem;
+	max-height: 5rem;
 	width: 18rem;
 }
 
 footer {
 	background-color: lawngreen;
+}
+
+@media screen and (max-width: 600px) {
+	header {
+		display: flex;
+		justify-content: center;
+	}
+
+	.container {
+		display: grid;
+		grid-template-columns: 1fr;
+		gap: 0.5rem;
+		margin-inline: 0.5rem;
+	}
+
+	.div_i {
+		min-height: 5rem;
+	}
+	.div_i:first-child {
+		grid-row: 2;
+	}
+
+	section {
+		margin: 1rem;
+	}
+
+	.section_i {
+		width: 10rem;
+	}
+
+	footer {
+		margin-top: -3.5rem;
+		margin-inline: 0.5rem;
+	}
 }
