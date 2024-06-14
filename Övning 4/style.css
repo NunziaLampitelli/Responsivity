@@ -1,0 +1,57 @@
+html {
+	min-width: 100vw;
+	min-height: 100vh;
+}
+
+body {
+	display: grid;
+	grid-template-rows: 1fr 2fr 1fr 1fr;
+}
+
+header {
+	max-height: 10rem;
+}
+
+figure {
+	background-color: purple;
+	width: 8rem;
+	height: 8rem;
+	border-radius: 100%;
+}
+
+.container {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-template-rows: 1fr 1fr;
+	gap: 1rem;
+	margin-left: 2rem;
+	margin-right: 2rem;
+}
+
+.div_i {
+	min-width: 15rem;
+	min-height: 10rem;
+	background-color: coral;
+}
+
+.div_i:first-child,
+.div_i:last-child {
+	background-color: blueviolet;
+}
+
+section {
+	margin: 3rem;
+	display: flex;
+	justify-content: center;
+}
+
+.section_i {
+	background-color: fuchsia;
+	border-radius: 34px;
+	height: 5rem;
+	width: 18rem;
+}
+
+footer {
+	background-color: lawngreen;
+}
